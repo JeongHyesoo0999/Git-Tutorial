@@ -65,3 +65,10 @@ git add > git commit > git push (<=> git pull)
   - 수동으로 파일에 들어가서 지우고 삭제한 다음 push한다.
 
 #### 9강 Git 원격 저장소 관리하기
+- git remote (git remote show origin)
+- git remote add test https://github.com/SGongD/Git-Tutorial.git
+- git remote -v (전체 목록 확인하기)
+- git remote rename 원래이름 바꿀이름(원격저장소 이름 바꾸기)
+- git remote rm 원격저장소명 (원격저장소 삭제)
+
+#### 10강 Git 로그(Log) 다루기
