@@ -47,3 +47,21 @@ git add > git commit > git push (<=> git pull)
 - git pull > 정확히 일치하는지
 - 시점으로 돌아가기 (git reset --hard 코드값)
 - 만약 특정 시점으로 돌아간 후에 Github도 똑같이 반영하고 싶다면? (git push -f)
+- Add함수 add>commit 한 후 코드 내에 Sub함수를 더하여 수정했다. 
+  - 이 때, 커밋 메시지를 변경하는 작업은 ? git commit --amend
+  - git push -f > git add .(Sub함수를 더하기 위해) > git commit -m ~ > git push
+
+#### 7강 Git 브랜치의 개요 및 사용해보기
+- 브랜치 상세내역 알아보기 (git branch)
+- 브랜치 생성하기 (git branch 브랜치명)
+- 브랜치 사용하기 (git checkout 브랜치명)
+- 브랜치2 add > commit 후 git checkout main으로 돌아간다.
+  - main브랜치와 브랜치2를 합친다 (git merge 브랜치2) > 그럼 맨 마지막 HEAD -> main, 브랜치2
+  - git push진행
+- 브랜치 삭제 (git branch -d 브랜치2)
+
+#### 8강 브랜치 충돌(Conflict) 처리하기 - 수동 처리
+- 브랜치2에 Div만 설정하고 main에는 Div와 Commant모두 설정 시
+  - 수동으로 파일에 들어가서 지우고 삭제한 다음 push한다.
+
+#### 9강 Git 원격 저장소 관리하기
