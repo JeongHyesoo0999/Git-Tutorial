@@ -93,4 +93,7 @@ git add > git commit > git push (<=> git pull)
   - 내가 선택할 커밋이 pick되어있다면 그 부분을 reword로 수정하고 :wq! 해준다.
   - 내가 삭제할 커밋이 pick되어있다면 그 부분을 drop으로 수정하고 :wq! 해준다.
 
-#### 14강 Git Config 환경 설정에 대해 알아보기
+#### 15강 Git Commit 날짜 변경 및 커미터 변경하기
+- git rebase -i **ID값** 
+- pick을 edit으로 바꿔준다.
+- GIT_COMMITER_DATE="Oct 1 10:00:00 2021 +0000" git commit --amend --no-edit --date "Oct 1 10:00:00 2021 +0000"
