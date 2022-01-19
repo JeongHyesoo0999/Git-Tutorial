@@ -72,3 +72,25 @@ git add > git commit > git push (<=> git pull)
 - git remote rm 원격저장소명 (원격저장소 삭제)
 
 #### 10강 Git 로그(Log) 다루기
+- git log = Commits 
+- git log --stat -> 얼마나 많은 라인이 추가되었는지
+- git log -p -3 -> 커밋에 저장된 구체적인 사항(어떻게 이루어져 있는지)
+- git log --pretty=oneline -> 각각의 커밋들이 한줄만에
+- git log --pretty=format:"%h(해시태그) -> %an(작성자이름), %ar(작성날짜) -> %s(커밋주제)" --graph
+
+#### 11강 Git에서 README.md파일 작성하기
+- git pull -> README파일 생성해서 내 컴퓨터에 있는 파일로 가져오기
+
+#### 12강 Git Archive 명령으로 소스코드만 압축하기
+- 예시 깃 프로젝트가 있다고 가정하자.
+  - git archive --format=zip main -o Master.zip
+  - git archive --format=zip main -o ../Master.zip -> 상대 경로도 가능하다.
+
+#### 13강 Git Rebase 명령으로 특정한 커밋을 수정/삭제하기
+- git init -> 깃 프로젝트 초기화하기 
+- git rebase -i ~ID값~ -> 특정 ID값의 위쪽을 확인 할 수 있다.
+- git rebase -i HEAD~3 -> 최근 3개까지의 커밋 수정하기
+  - 내가 선택할 커밋이 pick되어있다면 그 부분을 reword로 수정하고 :wq! 해준다.
+  - 내가 삭제할 커밋이 pick되어있다면 그 부분을 drop으로 수정하고 :wq! 해준다.
+
+#### 14강 Git Config 환경 설정에 대해 알아보기
