@@ -88,7 +88,7 @@ git add > git commit > git push (<=> git pull)
 
 #### 13강 Git Rebase 명령으로 특정한 커밋을 수정/삭제하기
 - git init -> 깃 프로젝트 초기화하기 
-- git rebase -i ~ID값~ -> 특정 ID값의 위쪽을 확인 할 수 있다.
+- git rebase -i **ID값** -> 특정 ID값의 위쪽을 확인 할 수 있다.
 - git rebase -i HEAD~3 -> 최근 3개까지의 커밋 수정하기
   - 내가 선택할 커밋이 pick되어있다면 그 부분을 reword로 수정하고 :wq! 해준다.
   - 내가 삭제할 커밋이 pick되어있다면 그 부분을 drop으로 수정하고 :wq! 해준다.
